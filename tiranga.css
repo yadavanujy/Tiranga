@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url("himalaya.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #cf4205;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+    font-size: 80px;
+  }
+  
+  .title-word-2 {
+    --color-1: #faf9f7;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+    font-size: 70px;
+  }
+  
+  .title-word-3 {
+    --color-1: #03a541;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+    font-size: 80px;
+  }
+  
+
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    /* display: grid; */
+    place-items: center;  
+    text-align: center;
+    height: 100vh
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+
+
+
+.container1 {
+    margin-left: 430px;
+    margin-top: -400px;
+    
+}
+
+.first {
+    border: 2px solid red;
+    background-color: red;
+    width: 400px;
+    height: 100px;
+}
+
+.second {
+    border: 2px solid yellow;
+    background-color: white;
+    width: 400px;
+    height: 100px;
+}
+
+.second img {
+    width: 100px;
+    height: 100px;
+    margin-left: 160px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.third {
+    border: 2px solid green;
+    background-color: green;
+    width: 400px;
+    height: 100px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+footer{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
